@@ -1,0 +1,19 @@
+{
+  "name": "tile-resizer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tollbit/tile-resizer.git"
+  },
+  "author": "Luke Reisch <lreisch@tollbit.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tollbit/tile-resizer/issues"
+  },
+  "homepage": "https://github.com/tollbit/tile-resizer#readme"
+}
