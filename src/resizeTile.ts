@@ -1,14 +1,14 @@
-var iframeDimensionsOld = {};
-var resizeObserver;
+var iframeDimensionsOld = { height: 0 };
+var resizeObserver: any;
 
-function setupResizeObserver(el) {
+function setupResizeObserver(el: any) {
   if (!resizeObserver) {
     resizeObserver = new ResizeObserver(() => sendDimensionsToParent(el));
   }
   resizeObserver.observe(el);
 }
 
-function getHeight(el) {
+function getHeight(el: any) {
   const style = window.getComputedStyle(el);
 
   const paddingTop = parseInt(style.paddingTop);
@@ -18,7 +18,7 @@ function getHeight(el) {
 }
 
 // send the latest page dimensions to the parent page on which this iframe is embedded
-function sendDimensionsToParent(el) {
+function sendDimensionsToParent(el: any) {
   const height = getHeight(el);
 
   var iframeDimensionsNew = {
@@ -32,7 +32,7 @@ function sendDimensionsToParent(el) {
   }
 }
 
-const init = (el) => {
+const init = (el: any) => {
   iframeDimensionsOld = {
     height: getHeight(el),
   };
@@ -55,7 +55,4 @@ const init = (el) => {
   setupResizeObserver(el);
 };
 
-// on load - send the page dimensions. (we do this on load because then all images have loaded...)
-window.addEventListener("load", function () {
-  init(document.body);
-});
+export default init;
