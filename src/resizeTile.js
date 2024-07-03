@@ -55,7 +55,4 @@ const init = (el) => {
   setupResizeObserver(el);
 };
 
-// on load - send the page dimensions. (we do this on load because then all images have loaded...)
-window.addEventListener("load", function () {
-  init(document.body);
-});
+export default init;
