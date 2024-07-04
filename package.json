@@ -1,6 +1,6 @@
 {
   "name": "tile-resizer",
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2-alpha.3",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
