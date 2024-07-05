@@ -2,11 +2,13 @@
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
+    "moduleResolution": "node",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "sourceMap": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]

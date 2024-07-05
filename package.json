@@ -1,6 +1,6 @@
 {
   "name": "tile-resizer",
-  "version": "0.1.1-beta.0",
+  "version": "0.1.1-beta.1",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,8 +8,10 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
     }
   },
   "files": [
